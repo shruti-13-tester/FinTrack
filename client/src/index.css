@@ -1,0 +1,227 @@
+
+@import "tailwindcss";
+
+/* =================================
+   FINTRACK - DESIGN SYSTEM
+================================= */
+
+:root {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+
+  --forest: #244B38;
+  --forest-dark: #183729;
+  --forest-light: #45634D;
+
+  --beige: #E8DDC8;
+  --beige-light: #F0E8D9;
+  --cream: #F7F3EA;
+
+  --sage: #A3B18A;
+  --white: #FFFFFF;
+
+  --text-primary: #26372D;
+  --text-secondary: #788078;
+
+  --border: #E8E2D7;
+
+  --success: #477A58;
+  --danger: #B85C50;
+}
+
+/* =================================
+   GLOBAL RESET
+================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background-color: var(--cream);
+  color: var(--text-primary);
+
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* =================================
+   TYPOGRAPHY
+================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--forest-dark);
+  letter-spacing: -0.025em;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* =================================
+   FORM ELEMENTS
+================================= */
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--forest-light);
+  box-shadow: 0 0 0 3px rgba(69, 99, 77, 0.12);
+}
+
+/* =================================
+   SCROLLBAR
+================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--beige);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sage);
+}
+
+/* =================================
+   SELECTION
+================================= */
+
+::selection {
+  background: var(--sage);
+  color: var(--forest-dark);
+}
+
+
+/* =================================
+   FINTRACK THEME OVERRIDES
+   Beige + Forest Green
+================================= */
+
+/* Main backgrounds */
+.bg-slate-50 {
+  background-color: #F7F3EA !important;
+}
+
+.bg-white {
+  background-color: #FFFEFA !important;
+}
+
+.bg-slate-950 {
+  background-color: #183729 !important;
+}
+
+.bg-slate-900 {
+  background-color: #244B38 !important;
+}
+
+/* Green buttons and accents */
+.bg-indigo-600,
+.hover\:bg-indigo-700:hover {
+  background-color: #244B38 !important;
+}
+
+.bg-indigo-700 {
+  background-color: #183729 !important;
+}
+
+.bg-indigo-500 {
+  background-color: #45634D !important;
+}
+
+/* Soft backgrounds */
+.bg-indigo-50 {
+  background-color: #F0E8D9 !important;
+}
+
+.bg-indigo-100 {
+  background-color: #E8DDC8 !important;
+}
+
+.bg-emerald-100,
+.bg-blue-100 {
+  background-color: #E5EBDD !important;
+}
+
+/* Text colours */
+.text-indigo-400,
+.text-indigo-500,
+.text-indigo-600,
+.text-indigo-700 {
+  color: #244B38 !important;
+}
+
+.text-slate-800 {
+  color: #26372D !important;
+}
+
+.text-slate-500,
+.text-slate-400 {
+  color: #788078 !important;
+}
+
+/* Borders */
+.border-slate-100,
+.border-slate-200 {
+  border-color: #E8E2D7 !important;
+}
+
+/* Sidebar */
+.bg-slate-950 .text-slate-400 {
+  color: #D5DDCF !important;
+}
+
+/* Dashboard balance card */
+.from-indigo-700 {
+  --tw-gradient-from: #244B38 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(36 75 56 / 0) var(--tw-gradient-to-position) !important;
+}
+
+.to-violet-600 {
+  --tw-gradient-to: #45634D var(--tw-gradient-to-position) !important;
+}
+
+/* Hover states */
+.hover\:bg-slate-100:hover {
+  background-color: #F0E8D9 !important;
+}
+
+.hover\:bg-slate-800:hover {
+  background-color: #45634D !important;
+}
