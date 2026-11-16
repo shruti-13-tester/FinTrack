@@ -1,0 +1,19 @@
+$kind: http-request
+name: http://localhost:5000/api/transactions
+description: ""
+url: http://localhost:5000/api/transactions
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \  \"amount\": 2800,\r
+
+    \  \"note\": \"Updated grocery shopping bill\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0fos}}"
+order: 1000
